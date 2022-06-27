@@ -42,15 +42,18 @@
           >
             <h1>
               <Coupang>
+                <span>Coupang</span>
                 <img src="/assets/logo/logo.svg" alt="" />
               </Coupang></h1
           ></a>
         </div>
 
-        <form action="">
-          <select name="product" id="product">
-            <option value="" selected>전체</option>
-          </select>
+        <form>
+          <div class="select_wrap">
+            <select name="product" id="product">
+              <option value="" selected>전체</option>
+            </select>
+          </div>
           <input
             name="q"
             type="search"
@@ -58,32 +61,34 @@
             placeholder="찾고 싶은 상품을 검색해 보세요!"
           />
           <button type="button" value="음성검색" class="mic_img">
+            <span>음성검색</span>
             <div></div>
           </button>
-          <button type="submit" class="search_img"><div></div></button>
+          <button type="submit" class="search_img">
+            <span>키워드검색</span>
+            <div></div>
+          </button>
         </form>
 
-        <div class="my_icons">
-          <div class="myCoupang">
-            <button class="myCoupang_btn">
-              <div></div>
-              <span>마이쿠팡</span>
-            </button>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+        <div class="myCoupang">
+          <button class="myCoupang_btn">
+            <div></div>
+            <span>마이쿠팡</span>
+          </button>
+          <ul>
+            <a href="/"><li>주문목록</li></a>
+            <a href="/"><li>취소/반품</li></a>
+            <a href="/"><li>찜리스트</li></a>
+          </ul>
+        </div>
 
-          <div class="cart">
-            <button class="cart_btn">
-              <div></div>
-              <span>장바구니</span>
-            </button>
-            <div class="cart_size">0</div>
-            <div class="cart_message"></div>
-          </div>
+        <div class="cart">
+          <button class="cart_btn">
+            <div></div>
+            <span>장바구니</span>
+          </button>
+          <div class="cart_size">0</div>
+          <div class="cart_message">장바구니에 담긴 상품이 없습니다.</div>
         </div>
 
         <div class="type_navigation">
