@@ -63,15 +63,23 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.button--category_img {
-  width: 30px;
-  height: 30px;
   background-image: url("/assets/icon/hamburger.svg");
   background-repeat: no-repeat;
-  margin-bottom: 12px;
+  background-position: 40px 30px;
 }
+
+.button--category_txt {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 45px;
+}
+/* .button--category_img {
+  width: 30px;
+  height: 30px;
+ 
+  background-repeat: no-repeat;
+  
+} */
 
 .coupang_logo {
   margin-top: 34px;
@@ -90,6 +98,7 @@ header {
 form {
   border: 1px solid var(--color-blue-600);
   display: flex;
+  align-items: center;
   width: 516px;
   height: 40px;
   margin-right: 22px;
@@ -132,32 +141,29 @@ input {
 }
 
 .mic_img {
+  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
   border: none;
   padding: 0px;
-}
-
-.search_img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-white);
-  border: none;
-  padding: 0px;
-}
-
-.mic_img div {
   background-image: url("/assets/icon/mic.svg");
+  background-repeat: no-repeat;
   background-position: 5px;
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
 }
 
-.search_img div {
+.search_img {
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  border: none;
+  padding: 0px;
   background-image: url("/assets/icon/search.svg");
   background-position: 6px;
   width: 40px;
@@ -184,15 +190,14 @@ input {
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
-}
-
-.myCoupang_btn div {
-  background-size: 30px 30px;
-  background-position: 6px 7px;
-  width: 40px;
-  height: 40px;
   background-image: url("/assets/icon/my-coupang.svg");
   background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 31px 9px;
+}
+
+.myCoupang_btn span {
+  margin-top: 40px;
 }
 
 .myCoupang > ul {
@@ -253,18 +258,14 @@ input {
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
-}
-
-.cart_btn div {
-  background-size: 30px 30px;
-  background-position: 5px 6px;
-  width: 40px;
-  height: 40px;
   background-image: url("/assets/icon/cart.svg");
   background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 5px 8px;
 }
 
 .cart_btn span {
+  margin-top: 40px;
   width: 45px;
 }
 
